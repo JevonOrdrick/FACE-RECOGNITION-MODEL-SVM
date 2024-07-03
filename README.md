@@ -1,29 +1,18 @@
-def create_readme():
-    readme_content = """
-    # Project Name
+# Pengenalan Wajah Menggunakan SVM dan Ekstraksi Fitur dari Citra Berwarna
 
-    This is a description of your project.
+## Deskripsi Proyek
 
-    ## Installation
+Proyek ini bertujuan untuk membangun sistem pengenalan wajah menggunakan algoritma Support Vector Machine (SVM) dan teknik ekstraksi fitur dari citra berwarna. SVM dipilih karena kemampuannya dalam klasifikasi dan generalisasi yang baik, sedangkan ekstraksi fitur bertujuan untuk mendapatkan representasi numerik yang efektif dari wajah.
 
-    Describe how to install your project.
+## Fitur Utama
 
-    ## Usage
-
-    Provide examples or describe how to use your project.
-
-    ## Contributing
-
-    Explain how others can contribute to your project.
-
-    ## License
-
-    Specify the license under which your project is distributed.
-
-    """
-    
-    with open('README.md', 'w') as f:
-        f.write(readme_content)
-
-if __name__ == "__main__":
-    create_readme()
+- **Ekstraksi Fitur:**
+  - Menggunakan metode ekstraksi fitur seperti Histogram of Oriented Gradients (HOG), Local Binary Patterns (LBP), atau metode lainnya.
+  - Mengubah citra wajah berwarna menjadi representasi fitur yang sesuai untuk model SVM.
+- **Pelatihan Model SVM:**
+  - Melatih model SVM menggunakan dataset wajah yang telah dilabeli.
+  - Optimasi parameter SVM untuk meningkatkan akurasi pengenalan.
+- **Pengenalan Wajah:**
+  - Menerima citra wajah baru sebagai input.
+  - Melakukan ekstraksi fitur pada citra input.
+  - Menggunakan model SVM yang telah dilatih untuk mengidentifikasi identitas wajah.
